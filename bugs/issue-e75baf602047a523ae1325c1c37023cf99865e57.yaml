@@ -11,8 +11,8 @@ type: :feature
 component: scriptcheck
 release: 
 reporter: Scott Taylor <scott@railsnewbie.com>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :wontfix
 creation_time: 2010-05-15 19:47:05.800908 Z
 references: []
 
@@ -22,3 +22,7 @@ log_events:
   - Scott Taylor <scott@railsnewbie.com>
   - created
   - ""
+- - 2010-05-15 22:19:50.462917 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - closed with disposition wontfix
+  - use with() instead of polluting the gloabl naespace
