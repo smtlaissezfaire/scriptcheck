@@ -9,7 +9,7 @@ describe("ScriptCheck", function() {
       describe("printing", function() {
         before_each(function() {
           reporter = require("scriptcheck/reporters/dot");
-          dotReporter = reporter.dot;
+          dotReporter = reporter.report;
 
           output = undefined;
           reporter.print = function(out) {
@@ -32,7 +32,7 @@ describe("ScriptCheck", function() {
 
           output.should.equal("F");
         });
-      })
+      });
 
       describe("print function", function() {
         it("should be sys.print", function() {
