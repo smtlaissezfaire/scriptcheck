@@ -1,0 +1,21 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: vendorize jspec
+desc: |-
+  jspec init is dirty - this code sucks:
+  
+  require.paths.unshift('spec', '/Users/scotttaylor/.rvm/gems/ruby/1.8.6/gems/jspec-3.3.2/lib', 'lib');
+type: :task
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-15 22:21:47.319780 Z
+references: []
+
+id: 66f25e713502ef33ca65267360935368565d8765
+log_events: 
+- - 2010-05-15 22:21:48.391421 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""
