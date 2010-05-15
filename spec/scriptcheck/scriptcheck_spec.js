@@ -22,11 +22,7 @@ describe("scriptcheck", function() {
       var argsGiven = [];
 
       var fun = function() {
-        var args = arguments;
-
-        return function() {
-          argsGiven = args;
-        };
+        argsGiven = arguments;
       };
 
       scriptcheck.run(100, fun);
