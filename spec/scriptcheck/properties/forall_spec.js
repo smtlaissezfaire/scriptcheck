@@ -30,8 +30,13 @@ describe("ScriptCheck", function() {
       });
 
       it("should yield variables to the generating function", function() {
-        var generator = function() { return "o hai"; };
+        var generator = function() {
+          return(function() {
+            return "o hai";
+          });
+        };
 
+        debugger;
         var fun = forall({x: generator}, function(obj) {
           return obj.x;
         });
