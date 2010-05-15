@@ -4,9 +4,8 @@ require('jspec');
 
 require.paths.unshift(__dirname + "/../lib");
 require('unit/spec.helper');
-// require('yourlib');
 
 JSpec
-  .exec('spec/scriptcheck/generators_spec.js')
+  .exec('spec/scriptcheck/generators/int_spec.js')
   .run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures' })
   .report();
