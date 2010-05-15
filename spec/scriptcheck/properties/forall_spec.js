@@ -36,27 +36,12 @@ describe("ScriptCheck", function() {
           });
         };
 
-        debugger;
         var fun = forall({x: generator}, function(obj) {
           return obj.x;
         });
 
         fun(1)[0].should.equal("o hai");
       });
-
-      // describe("when a test case fails", function() {
-      //   it("should yield an expected and actual value", function() {
-      //     var property = forall({}, function() {
-      //       return false;
-      //     });
-      //
-      //     property(1, function(result) {
-      //       result["type"].should.equal("failure");
-      //       result["expected"].should.equal(true);
-      //       result["actual"].should.equal(false);
-      //     });
-      //   });
-      // });
     });
   });
 });
