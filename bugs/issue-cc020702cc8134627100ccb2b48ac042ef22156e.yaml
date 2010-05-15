@@ -13,7 +13,7 @@ desc: |-
   sc.run(10000, sc.ForAll({x: sc.Int}, function(params) {
     var x = params.x,
         result = ((x * x) / x);
-        
+  
     if (result < Number.MAX_VALUE) {
       return sc.expectEqual(result, x);
     }
@@ -22,8 +22,8 @@ type: :bugfix
 component: scriptcheck
 release: 
 reporter: Scott Taylor <scott@railsnewbie.com>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2010-05-15 19:40:27.039279 Z
 references: []
 
@@ -32,4 +32,8 @@ log_events:
 - - 2010-05-15 19:40:35.782684 Z
   - Scott Taylor <scott@railsnewbie.com>
   - created
+  - ""
+- - 2010-05-15 22:14:29.074655 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - closed with disposition fixed
   - ""
