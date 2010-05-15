@@ -32,6 +32,11 @@ describe("ScriptCheck", function() {
 
           output.should.equal("F");
         });
+
+        it("should output a 's' for skip when nothing is returned", function() {
+          dotReporter();
+          output.should.equal("s");
+        });
       });
 
       describe("print function", function() {
