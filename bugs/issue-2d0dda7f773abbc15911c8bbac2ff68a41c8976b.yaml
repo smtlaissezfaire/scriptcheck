@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: "add generator: \"String\""
+desc: Add string generator.  Pass in length to the generator.
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-15 19:42:31.648482 Z
+references: []
+
+id: 2d0dda7f773abbc15911c8bbac2ff68a41c8976b
+log_events: 
+- - 2010-05-15 19:42:33.544120 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

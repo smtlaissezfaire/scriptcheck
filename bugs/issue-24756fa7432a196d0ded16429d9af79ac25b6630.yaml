@@ -1,0 +1,21 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: add multifile / directory runner
+desc: |-
+  add bin/scriptcheck to run multiple files (or a whole directory)
+  
+  bin/scriptcheck should take --testcases = 10 to run each test case with 10 examples
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-15 19:45:42.077590 Z
+references: []
+
+id: 24756fa7432a196d0ded16429d9af79ac25b6630
+log_events: 
+- - 2010-05-15 19:45:43.453707 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

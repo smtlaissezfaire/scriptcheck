@@ -1,0 +1,24 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: pretty/dirty syntax
+desc: |-
+  it would be nice to (optionally) say:
+  
+  sc = require("scriptcheck");
+  sc.dirty();
+  
+  ForAll({x: INT}, function(args) { return args.x ... });
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-15 19:47:05.800908 Z
+references: []
+
+id: e75baf602047a523ae1325c1c37023cf99865e57
+log_events: 
+- - 2010-05-15 19:47:07.584811 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

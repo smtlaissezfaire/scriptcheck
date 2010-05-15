@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: color reporting
+desc: Add color to reporting (dots should be green, F should be red)
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-15 19:41:03.749251 Z
+references: []
+
+id: 56160dd2d8a6f06dbec591a8985bd5895c1f940c
+log_events: 
+- - 2010-05-15 19:41:05.413181 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

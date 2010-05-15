@@ -1,0 +1,35 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: forall with no return (or no assertion) should not raise an error
+desc: |-
+  The following code shouldn't raise an error:
+  
+  #!/usr/bin/env node
+  ; // a semicolon to make jslint happy
+  
+  require.paths.unshift(__dirname + "/../lib");
+  var sc = require("scriptcheck");
+  sc.setup();
+  
+  sc.run(10000, sc.ForAll({x: sc.Int}, function(params) {
+    var x = params.x,
+        result = ((x * x) / x);
+        
+    if (result < Number.MAX_VALUE) {
+      return sc.expectEqual(result, x);
+    }
+  }));
+type: :bugfix
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-15 19:40:27.039279 Z
+references: []
+
+id: cc020702cc8134627100ccb2b48ac042ef22156e
+log_events: 
+- - 2010-05-15 19:40:35.782684 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

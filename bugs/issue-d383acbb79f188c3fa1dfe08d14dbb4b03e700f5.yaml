@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Failure output
+desc: Failures should be output with expected & actual results
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-15 19:41:48.994736 Z
+references: []
+
+id: d383acbb79f188c3fa1dfe08d14dbb4b03e700f5
+log_events: 
+- - 2010-05-15 19:41:50.050521 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""
