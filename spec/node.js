@@ -9,5 +9,6 @@ JSpec
   .exec('spec/scriptcheck/generators/int_spec.js')
   .exec('spec/scriptcheck/properties/forall_spec.js')
   .exec('spec/scriptcheck/framework/expect_equal_spec.js')
+  .exec('spec/scriptcheck/reporters/dot_reporter_spec.js')
   .run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures' })
   .report();
