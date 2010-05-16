@@ -30,6 +30,23 @@ describe("scriptcheck", function() {
       argsGiven[0].should.equal(100);
       argsGiven[1].should.equal(scriptcheck.reporter.report);
     });
+
+    it("should output an empty line after running", function() {
+      received = undefined;
+      scriptcheck.puts = function(text) {
+        received = text;
+      };
+
+      var fun = function() {};
+      scriptcheck.run(100, fun);
+
+      received.should.equal("");
+    });
+
+    it("should have the default puts wired up", function() {
+      var sys = require("sys");
+      scriptcheck.puts.should.equal(sys.puts);
+    });
   });
 
   it("should have the int generator", function() {
