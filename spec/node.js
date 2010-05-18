@@ -6,6 +6,7 @@ require.paths.unshift("spec");
 require.paths.unshift("lib");
 
 require('jspec');
+require('./vendor/jspec_dot_reporter/jspec_dot_reporter');
 require('unit/spec.helper');
 
 JSpec
@@ -14,5 +15,5 @@ JSpec
   .exec('spec/scriptcheck/framework/expect_equal_spec.js')
   .exec('spec/scriptcheck/reporters/dot_reporter_spec.js')
   .exec('spec/scriptcheck/scriptcheck_spec.js')
-  .run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures' })
+  .run({ reporter: JSpecDotReporter, fixturePath: 'spec/fixtures', failuresOnly: true })
   .report();
