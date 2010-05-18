@@ -2,10 +2,9 @@
 ; // a semicolon to make jslint happy
 
 require.paths.unshift(__dirname + "/../lib");
-var sc = require("scriptcheck");
-sc.setup();
+var scriptcheck = require("scriptcheck");
 
-with(sc) {
+with(scriptcheck) {
   describe("a number should equal itself", function() {
     Int.forAll(function(anInt) {
       return expectEqual(anInt, anInt);
