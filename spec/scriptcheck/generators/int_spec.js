@@ -22,14 +22,14 @@ describe("ScriptCheck", function() {
 
       it("should produce a number", function() {
         forall(function() {
-          return(typeof(generator.generate()()) === 'number');
+          return(typeof(generator.generate()) === 'number');
         });
       });
 
       it("should produce a different number each time", function() {
         forall(function() {
-          var v1 = generator.generate()(),
-              v2 = generator.generate()();
+          var v1 = generator.generate(),
+              v2 = generator.generate();
 
           return v1 !== v2;
         });
