@@ -12,6 +12,7 @@ JSpec
   .exec('spec/scriptcheck/generators/int_spec.js')
   .exec('spec/scriptcheck/properties/forall_spec.js')
   .exec('spec/scriptcheck/framework/expect_equal_spec.js')
+  .exec('spec/scriptcheck/framework/describe_spec.js')
   .exec('spec/scriptcheck/reporters/dot_reporter_spec.js')
   .exec('spec/scriptcheck/scriptcheck_spec.js')
   .run({ reporter: JSpecDotReporter, fixturePath: 'spec/fixtures', failuresOnly: true })
