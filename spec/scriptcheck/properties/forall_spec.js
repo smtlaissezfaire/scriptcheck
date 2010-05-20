@@ -1,22 +1,22 @@
 describe("ScriptCheck", function() {
   describe("generators", function() {
-    describe("forall", function() {
+    describe("forAll", function() {
       before_each(function() {
-        forall = require("scriptcheck/properties/forall").forall;
+        forAll = require("scriptcheck/properties/forAll").forAll;
       });
 
       it("should return a function", function() {
-        var x = forall({}, function() { return true; });
+        var x = forAll({}, function() { return true; });
         typeof(x).should.equal('function');
       });
 
       it("should return an array as the result of calling the inner function", function() {
-        var result = forall({}, function() { return true; })(1);
+        var result = forAll({}, function() { return true; })(1);
         (result instanceof Array).should.be(true);
       });
 
       it("should have the array as many times as it is given", function() {
-        var fun = forall({}, function() { return true; });
+        var fun = forAll({}, function() { return true; });
 
         fun(0).length.should.equal(0);
         fun(1).length.should.equal(1);
@@ -25,7 +25,7 @@ describe("ScriptCheck", function() {
       });
 
       it("should return the results of calling the generator function", function() {
-        var fun = forall({}, function() { return true; });
+        var fun = forAll({}, function() { return true; });
         fun(1)[0].should.equal(true);
       });
 
@@ -36,7 +36,7 @@ describe("ScriptCheck", function() {
           });
         };
 
-        var fun = forall({x: generator}, function(obj) {
+        var fun = forAll({x: generator}, function(obj) {
           return obj.x;
         });
 

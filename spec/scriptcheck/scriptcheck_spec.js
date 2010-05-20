@@ -22,9 +22,9 @@ describe("scriptcheck", function() {
     scriptcheck.Int.should.equal(intGenerator);
   });
 
-  it("should have forall", function() {
-    var forall = require("scriptcheck/properties/forall").forall;
-    scriptcheck.ForAll.should.equal(forall);
+  it("should have forAll", function() {
+    var forAll = require("scriptcheck/properties/forall").forAll;
+    scriptcheck.ForAll.should.equal(forAll);
   });
 
   it("should have expectEqual", function() {
