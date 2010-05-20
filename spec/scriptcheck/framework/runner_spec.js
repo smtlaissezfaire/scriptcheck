@@ -27,5 +27,17 @@ describe("running", function() {
 
     received.should.equal("");
   });
+
+  it("should run the function in each of the desc-ribe blocks when not given a function", function() {
+    var called = false;
+
+    var my_fun = function() {
+      called = true;
+    };
+    scriptcheck.describe("foo", my_fun);
+
+    scriptcheck.run(1);
+    called.should.be(true);
+  });
 });
 
