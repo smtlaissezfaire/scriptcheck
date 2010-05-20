@@ -6,21 +6,18 @@ var scriptcheck = require("scriptcheck");
 
 with(scriptcheck) {
   describe("a number should equal itself", function() {
-    Int.forAll(function(anInt) {
-      return expectEqual(anInt, anInt);
-    });
+    var anInt = new Integer;
+    return expectEqual(anInt, anInt);
   });
 
   describe("the square root of a square should be itself", function() {
-    Int.forAll(function(anInt) {
-      return expectEqual(Math.sqrt(anInt * anInt), anInt);
-    });
+    var anInt = new Integer;
+    return expectEqual(Math.sqrt(anInt * anInt), anInt);
   });
 
   describe("the division of a square by itself should be the number", function() {
-    Int.forAll(function(anInt) {
-      return expectEqual((anInt * anInt / anInt), anInt);
-    });
+    var anInt = new Integer;
+    return expectEqual((anInt * anInt / anInt), anInt);
   });
 
   run(100);
