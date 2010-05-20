@@ -22,4 +22,7 @@ with(scriptcheck) {
       return expectEqual((anInt * anInt / anInt), anInt);
     });
   });
+
+  run(100);
 }
+
