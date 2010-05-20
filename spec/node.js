@@ -7,7 +7,6 @@ require.paths.unshift("lib");
 
 require('jspec');
 require('./vendor/jspec_dot_reporter/jspec_dot_reporter');
-require('unit/spec.helper');
 
 JSpec
   .exec('spec/scriptcheck/generators/int_spec.js')
