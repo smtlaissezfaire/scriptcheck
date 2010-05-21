@@ -4,5 +4,13 @@ version: "0.5"
 components: 
 - !ditz.rubyforge.org,2008-03-06/component 
   name: scriptcheck
-releases: []
-
+releases: 
+- !ditz.rubyforge.org,2008-03-06/release 
+  name: 0.0.2
+  status: :unreleased
+  release_time: 
+  log_events: 
+  - - 2010-05-21 04:35:05.593300 Z
+    - Scott Taylor <scott@railsnewbie.com>
+    - created
+    - ""
