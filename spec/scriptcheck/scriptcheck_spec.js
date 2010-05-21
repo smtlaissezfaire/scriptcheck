@@ -19,7 +19,7 @@ describe("scriptcheck", function() {
 
   it("should have the int generator", function() {
     var intGenerator = require("scriptcheck/generators/int").generate;
-    scriptcheck.Int.should.equal(intGenerator);
+    scriptcheck.Random.Integer.should.equal(intGenerator);
   });
 
   it("should have forAll", function() {
