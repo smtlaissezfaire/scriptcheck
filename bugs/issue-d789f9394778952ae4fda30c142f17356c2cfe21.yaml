@@ -1,0 +1,21 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: command line options
+desc: |-
+  Vendorize js-opts.  Use a command line option parser to run a file, or a directory of files.
+  
+  Wrap the require, and wrap the files with the with(require("scriptcheck")).
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-21 04:33:03.359917 Z
+references: []
+
+id: d789f9394778952ae4fda30c142f17356c2cfe21
+log_events: 
+- - 2010-05-21 04:33:04.255890 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

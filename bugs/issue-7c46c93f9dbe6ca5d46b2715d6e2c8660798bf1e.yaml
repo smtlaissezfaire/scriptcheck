@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: test case reduction
+desc: Figure out how test case reduction is done in the other quickcheck frameworks, and replicate it.
+type: :feature
+component: scriptcheck
+release: 
+reporter: .
+status: :unstarted
+disposition: 
+creation_time: 2010-05-21 04:34:30.323392 Z
+references: []
+
+id: 7c46c93f9dbe6ca5d46b2715d6e2c8660798bf1e
+log_events: 
+- - 2010-05-21 04:34:31.315241 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: optional stopping of failure output at first error
+desc: (Optionally) stop a test case after the first error.
+type: :feature
+component: scriptcheck
+release: 
+reporter: .
+status: :unstarted
+disposition: 
+creation_time: 2010-05-21 04:33:53.957309 Z
+references: []
+
+id: 08312a5ea71c654f0c538e989bfaf33b96c62a4e
+log_events: 
+- - 2010-05-21 04:33:55.389189 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""

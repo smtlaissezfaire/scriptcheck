@@ -1,0 +1,23 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: "add generator: array"
+desc: |-
+  A random size list of elements.
+  
+  Elements should be optionally specified with a generator (function) passed into the constructor.  Something like:
+  
+  var anArray = Random.Array(Random.Integer);
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-21 04:31:57.203498 Z
+references: []
+
+id: 91275fe4ebafc257a5cea081131cf865b4df8dcd
+log_events: 
+- - 2010-05-21 04:31:57.955385 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""
