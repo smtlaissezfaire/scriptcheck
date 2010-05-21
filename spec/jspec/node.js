@@ -8,6 +8,20 @@ require.paths.unshift("lib");
 require('jspec');
 require('jspec_dot_reporter');
 
+JSpec.include({
+  beforeSpec: function() {
+    scriptcheck = require("scriptcheck");
+    scriptcheck.setup();
+    scriptcheck.reporter.setup();
+    scriptcheck.puts = function() {};
+  },
+
+  afterSpec: function() {
+    scriptcheck.setup();
+  }
+});
+
+
 JSpec
   .exec('spec/jspec/scriptcheck/generators/int_spec.js')
   .exec('spec/jspec/scriptcheck/framework/expect_equal_spec.js')

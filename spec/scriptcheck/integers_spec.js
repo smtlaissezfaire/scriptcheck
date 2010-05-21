@@ -20,6 +20,6 @@ with(scriptcheck) {
     return expectEqual((anInt * anInt / anInt), anInt);
   });
 
-  run(100);
+  run(1000);
 }
 

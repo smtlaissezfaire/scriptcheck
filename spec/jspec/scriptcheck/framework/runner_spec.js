@@ -1,19 +1,7 @@
 describe("running", function() {
   before_each(function() {
     scriptcheck = require("scriptcheck");
-  });
-
-  it("should call the fun with the params", function() {
-    var argsGiven = [];
-
-    var fun = function() {
-      argsGiven = arguments;
-    };
-
-    scriptcheck.run(100, fun);
-
-    argsGiven[0].should.equal(100);
-    argsGiven[1].should.equal(scriptcheck.reporter.report);
+    scriptcheck.reporter.report = function() {};
   });
 
   it("should output an empty line after running", function() {
@@ -39,5 +27,33 @@ describe("running", function() {
     scriptcheck.run(1);
     called.should.be(true);
   });
-});
 
+  it("should call the function the number of times given", function() {
+    var calledTimes = 0;
+
+    var my_fun = function() {
+      calledTimes += 1;
+    };
+
+    scriptcheck.describe("foo", my_fun);
+    scriptcheck.run(100);
+
+    calledTimes.should.equal(100);
+  });
+
+  it("should output a call the reporter with the results of the run", function() {
+    var resultReceived;
+
+    scriptcheck.describe('foo', function() {
+      return "a result";
+    });
+
+    scriptcheck.reporter.report = function(result) {
+      resultReceived = result;
+    };
+
+    scriptcheck.run(1);
+
+    resultReceived.should.equal("a result");
+  });
+});
