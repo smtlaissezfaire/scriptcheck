@@ -10,7 +10,6 @@ require('jspec_dot_reporter');
 
 JSpec
   .exec('spec/jspec/scriptcheck/generators/int_spec.js')
-  .exec('spec/jspec/scriptcheck/properties/forall_spec.js')
   .exec('spec/jspec/scriptcheck/framework/expect_equal_spec.js')
   .exec('spec/jspec/scriptcheck/framework/describe_spec.js')
   .exec('spec/jspec/scriptcheck/framework/runner_spec.js')

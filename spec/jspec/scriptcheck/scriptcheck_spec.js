@@ -22,11 +22,6 @@ describe("scriptcheck", function() {
     scriptcheck.Random.Integer.should.equal(intGenerator);
   });
 
-  it("should have forAll", function() {
-    var forAll = require("scriptcheck/properties/forall").forAll;
-    scriptcheck.ForAll.should.equal(forAll);
-  });
-
   it("should have expectEqual", function() {
     var expectEqual = require("scriptcheck/framework/expect_equal").expectEqual;
     scriptcheck.expectEqual.should.equal(expectEqual);
