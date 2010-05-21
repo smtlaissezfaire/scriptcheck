@@ -1,0 +1,25 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: pretty syntax for expectEqual
+desc: |-
+  Would like to get something closer to rspec:
+  
+  5.shouldEqual(5);
+  
+  instead of:
+  
+  return expectEqual(5, 5);
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-21 04:37:33.657683 Z
+references: []
+
+id: be7746a9ae1ab3354e4804193e4b87b7e70726de
+log_events: 
+- - 2010-05-21 04:37:34.425538 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""
