@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 ; // a semicolon to make jslint happy
 
-require.paths.unshift(__dirname + "/../../lib");
+var path = require("path");
+
+require.paths.unshift(path.join(__dirname, "..", "..", "lib"));
 var scriptcheck = require("scriptcheck");
 
 with(scriptcheck) {
