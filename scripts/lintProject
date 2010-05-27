@@ -2,7 +2,7 @@
 
 cmd="jsl "
 
-for file in $(find lib spec/jspec spec/scriptcheck | grep .js); do
+for file in $(find lib spec/jspec spec/scriptcheck | grep '.js$'); do
 	cmd="$cmd -process $file"
 done
 
