@@ -5,7 +5,7 @@ test_jspec:
 	node spec/jspec/node.js
 
 test_scriptcheck:
-	node spec/scriptcheck/integers_spec.js
+	bin/scriptcheck spec/scriptcheck/integers_spec.js
 
 lint:
 	scripts/lintProject

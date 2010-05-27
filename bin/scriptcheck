@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+; // a semicolon to make jslint happy
+
+var path = require("path"),
+    fs   = require("fs");
+
+require.paths.unshift(__dirname, "..", "lib");
+
+with(require("scriptcheck")) {
+  var filename = process.argv[2],
+      fileContents = fs.readFileSync(filename);
+
+  eval(fileContents);
+
+  run(1000);
+}
+
