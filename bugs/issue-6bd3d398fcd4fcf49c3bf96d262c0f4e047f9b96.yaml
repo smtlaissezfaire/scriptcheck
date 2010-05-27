@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: boolean generator
+desc: add boolean generator - generate true, false
+type: :feature
+component: scriptcheck
+release: 
+reporter: Scott Taylor <scott@railsnewbie.com>
+status: :unstarted
+disposition: 
+creation_time: 2010-05-27 07:03:54.374047 Z
+references: []
+
+id: 6bd3d398fcd4fcf49c3bf96d262c0f4e047f9b96
+log_events: 
+- - 2010-05-27 07:03:55.421879 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - created
+  - ""
