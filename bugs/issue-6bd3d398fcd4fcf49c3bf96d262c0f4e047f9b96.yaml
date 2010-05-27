@@ -5,8 +5,8 @@ type: :feature
 component: scriptcheck
 release: 
 reporter: Scott Taylor <scott@railsnewbie.com>
-status: :unstarted
-disposition: 
+status: :closed
+disposition: :fixed
 creation_time: 2010-05-27 07:03:54.374047 Z
 references: []
 
@@ -15,4 +15,8 @@ log_events:
 - - 2010-05-27 07:03:55.421879 Z
   - Scott Taylor <scott@railsnewbie.com>
   - created
+  - ""
+- - 2010-05-27 07:32:25.303594 Z
+  - Scott Taylor <scott@railsnewbie.com>
+  - closed with disposition fixed
   - ""
