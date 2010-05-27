@@ -27,7 +27,6 @@ var repeatString = function(str, anInt) {
   return newStr;
 };
 
-
 describe("it should report the number of successes & failures", function() {
   var anInt = Random.Integer.PositiveSmall();
   var expectedOutput = "";
