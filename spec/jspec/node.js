@@ -11,16 +11,15 @@ require('jspec_dot_reporter');
 JSpec.include({
   beforeSpec: function() {
     scriptcheck = require("scriptcheck");
-    scriptcheck.setup();
+    scriptcheck.reset();
     scriptcheck.reporter.setup();
     scriptcheck.puts = function() {};
   },
 
   afterSpec: function() {
-    scriptcheck.setup();
+    scriptcheck.reset();
   }
 });
-
 
 JSpec.
   exec('spec/jspec/scriptcheck/generators/int_spec.js').

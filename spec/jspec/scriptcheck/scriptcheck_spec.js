@@ -1,13 +1,4 @@
 describe("scriptcheck", function() {
-  before_each(function() {
-    scriptcheck = require("scriptcheck");
-    scriptcheck.setup();
-  });
-
-  after_each(function() {
-    scriptcheck.setup();
-  });
-
   it("should have the default reporter as the dotReporter", function() {
     var dotReporter = require("scriptcheck/reporters/dot");
     scriptcheck.reporter.should.equal(dotReporter);
@@ -29,6 +20,7 @@ describe("scriptcheck", function() {
 
   it("should have the default puts wired up", function() {
     var sys = require("sys");
+    scriptcheck.reset();
     scriptcheck.puts.should.equal(sys.puts);
   });
 });

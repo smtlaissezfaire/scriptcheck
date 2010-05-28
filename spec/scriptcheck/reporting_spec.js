@@ -13,7 +13,7 @@ var contextSetup = function() {
 };
 
 var contextTeardown = function() {
-  sc.setup();
+  sc.reset();
 };
 
 var repeatString = function(str, anInt) {
