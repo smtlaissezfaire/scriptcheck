@@ -23,4 +23,21 @@ describe("scriptcheck", function() {
     scriptcheck.reset();
     scriptcheck.puts.should.equal(sys.puts);
   });
+
+  it("should have color on by default", function() {
+    scriptcheck.reset();
+    scriptcheck.color.should.equal(true);
+  });
+
+  it("should turn it back on after reseting if turned off", function() {
+    scriptcheck.color = false;
+    scriptcheck.reset();
+    scriptcheck.color.should.equal(true);
+  });
+
+  describe("colors", function() {
+    it("should be the colors module", function() {
+      scriptcheck.colors.should.not.be(undefined);
+    });
+  });
 });

@@ -1,11 +1,10 @@
 describe("running", function() {
   before_each(function() {
     scriptcheck = require("scriptcheck");
-    scriptcheck.reporter.report = function() {};
   });
 
   it("should output an empty line after running", function() {
-    received = undefined;
+    var received = undefined;
     scriptcheck.puts = function(text) {
       received = text;
     };
@@ -39,21 +38,5 @@ describe("running", function() {
     scriptcheck.run(100);
 
     calledTimes.should.equal(100);
-  });
-
-  it("should output a call the reporter with the results of the run", function() {
-    var resultReceived;
-
-    scriptcheck.describe('foo', function() {
-      return "a result";
-    });
-
-    scriptcheck.reporter.report = function(result) {
-      resultReceived = result;
-    };
-
-    scriptcheck.run(1);
-
-    resultReceived.should.equal("a result");
   });
 });

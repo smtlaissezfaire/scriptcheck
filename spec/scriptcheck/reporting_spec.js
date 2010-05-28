@@ -3,7 +3,7 @@ var sc = require("scriptcheck");
 var actualOutput = "";
 
 var contextSetup = function() {
-  sc.reporter.print = function(str) {
+  sc.print = function(str) {
     actualOutput += str;
   };
 
@@ -39,7 +39,9 @@ describe("it should report the number of successes & failures", function() {
     return sc.expectEqual(true, true);
   });
 
-  expectedOutput += repeatString(".", anInt) + "\n";
+  var dotOutput = sc.colors.green + "." + sc.colors.reset;
+
+  expectedOutput += repeatString(dotOutput, anInt) + "\n";
   expectedOutput += "\n";
   expectedOutput += "Passes: " + anInt + "\n";
   expectedOutput += "Failures: 0";

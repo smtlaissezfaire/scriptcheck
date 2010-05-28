@@ -12,8 +12,8 @@ JSpec.include({
   beforeSpec: function() {
     scriptcheck = require("scriptcheck");
     scriptcheck.reset();
-    scriptcheck.reporter.setup();
     scriptcheck.puts = function() {};
+    scriptcheck.print = function() {};
   },
 
   afterSpec: function() {
